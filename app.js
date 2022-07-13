@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-const countDownDate = new Date("Jul 23, 2022 01:00:00").getTime();
+const countDownDate = new Date("Jul 23, 2022 18:00:00").getTime();
 const day = document.getElementById('day');
 const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
