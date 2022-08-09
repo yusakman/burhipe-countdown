@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-const countDownDate = new Date("Jul 23, 2022 18:00:00").getTime();
+const countDownDate = new Date("Jul 23, 2022 19:00:00").getTime();
 const day = document.getElementById('day');
 const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
@@ -13,7 +13,7 @@ const x = setInterval(function() {
   const now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  const distance = countDownDate - now;
+  const distance = now - countDownDate;
     
   // Time calculations for days, hours, minutes and seconds
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -30,8 +30,4 @@ const x = setInterval(function() {
   second.innerHTML = seconds;
 
   // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    title.innerHTML = "WE ARE LAUNCH";
-  }
 }, 1000);
