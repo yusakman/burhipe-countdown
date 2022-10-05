@@ -26,6 +26,20 @@ h2, h3, h4, p {
     justify-content: center;
 }
 
+.carousel {
+    margin: 10px;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+}
+
+.carousel-inner #img-6, #img-1, #img-2, #img-4, #img-3, #img-9 {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
 .countdown {
     /* min-width: 100vh; */
     display: flex;
